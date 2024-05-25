@@ -21,15 +21,24 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+<!--  <distributionManagement>-->
+<!--    <repository>-->
+<!--      <id>releases</id>-->
+<!--      <url>http://192.168.100.5:8080</url>-->
+<!--    </repository>-->
+<!--    <snapshotRepository>-->
+<!--      <id>snapshots</id>-->
+<!--      <url>http://192.168.100.5:8080</url>-->
+<!--    </snapshotRepository>-->
+<!--  </distributionManagement>-->
   <distributionManagement>
     <repository>
-      <id>releases</id>
-      <url>http://http://192.168.100.5:8080</url>
+      <uniqueVersion>false</uniqueVersion>
+      <id>corp1</id>
+      <name>Corporate Repository</name>
+      <url>http://192.168.100.5:8080/WebApp1</url>
+      <layout>default</layout>
     </repository>
-    <snapshotRepository>
-      <id>snapshots</id>
-      <url>http://http://192.168.100.5:8080</url>
-    </snapshotRepository>
   </distributionManagement>
 </project>
 
